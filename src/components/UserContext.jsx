@@ -2,6 +2,7 @@ import { createContext, useState } from "react";
 
 const UserContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 const UserProvider = ({ children }) => {
     const [user, setUser] = useState({ name: "John Doe" })
 
